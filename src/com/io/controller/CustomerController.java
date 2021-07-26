@@ -42,7 +42,7 @@ public class CustomerController {
 	@PostMapping("/saveForm")
 	public String saveCustomer(@ModelAttribute("customer") Customer customer) {
 		customerService.saveCustomer(customer);
-		return "redirect:getcust";
+		return "redirect:getcust";  
 	}
 	
 	@GetMapping("/showUpdateForm")
